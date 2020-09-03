@@ -2,16 +2,16 @@ import React, { useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 
 const alanKeyId =
-  "f30d8a13bdfeb1c03b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage";
+  "e9da2f327508022e3b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage";
 const newsApiId = "";
 
 const App = () => {
   useEffect(() => {
     alanBtn({
       key: alanKeyId,
-      onCommand: ({ command }) => {
-        if (command === "testCommand") {
-          alert("Alan Worked");
+      onCommand: ({ command, articles }) => {
+        if (command === "newHeadlines") {
+          console.log(articles);
         }
       },
     });
