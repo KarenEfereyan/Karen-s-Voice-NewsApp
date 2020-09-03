@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import alanBtn from "@alan-ai/alan-sdk-web";
 
-function App() {
+const alanKeyId =
+  "f30d8a13bdfeb1c03b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage";
+const newsApiId = "";
+
+const App = () => {
+  useEffect(() => {
+    alanBtn({
+      key: alanKeyId,
+      onCommand: ({ command }) => {
+        if (command === "testCommand") {
+          alert("Alan Worked");
+        }
+      },
+    });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Karen's Voice News App</h1>
     </div>
   );
-}
+};
 
 export default App;
