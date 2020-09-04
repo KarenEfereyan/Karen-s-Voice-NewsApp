@@ -14,3 +14,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.header{
+  text-align:center;
+  text-transform:uppercase;
+  font-family:cursive;
+  font-size:30px;
+}

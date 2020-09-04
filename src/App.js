@@ -26,6 +26,7 @@ const App = () => {
 
   return (
     <div>
+    <h1 class="header">Get Your News Via Voice</h1>
       <NewsCards articles={newsArticles} />
     </div>
   );
