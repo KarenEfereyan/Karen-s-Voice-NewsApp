@@ -6,11 +6,11 @@ import classNames from 'classnames';
 import useStyles from './styles.js';
 
 
-const NewsCard = ({ article: { source, author, title,  description, url, urlToImage, publishedAt }, i}) => {
+const NewsCard = ({ article: { source, author, title,  description, url, urlToImage, publishedAt }, i, activeArticle}) => {
     const classes = useStyles();
 
     return (
-        <Card className={classNames(classes.card)}>
+        <Card className={classNames(classes.card, activeArticle === i ? classes.activeCard : null)}>
         <CardActionArea href={url} target="_blank">
           <CardMedia className={classes.media} image={urlToImage || 'https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png'} title={title} />
           <div className={classes.details}>
