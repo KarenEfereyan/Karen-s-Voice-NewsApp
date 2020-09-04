@@ -1,14 +1,15 @@
 // Single and individual News Card
 import React from 'react';
 import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+//allows us use multiple classes
 import classNames from 'classnames';
 import useStyles from './styles.js';
 
 
-const NewsCard = ({ article: { source, author, title,  description, url,urlToImage, publishedAt }, i}) => {
+const NewsCard = ({ article: { source, author, title,  description, url, urlToImage, publishedAt }, i}) => {
     const classes = useStyles();
-    return (
 
+    return (
         <Card className={classNames(classes.card)}>
         <CardActionArea href={url} target="_blank">
           <CardMedia className={classes.media} image={urlToImage || 'https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png'} title={title} />

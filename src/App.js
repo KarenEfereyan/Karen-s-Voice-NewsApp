@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from './components/NewsCards/NewsCards';
+import { Typography } from '@material-ui/core';
 
 //This allows me interact with my ALAN studio project
 const alanKeyId =
   'e9da2f327508022e3b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage'
 const newsId='f28a3f24a9aa43c0bd5ef839bce4eb26';
+
 
 const App = () => {
   // we will be setting the articles here
@@ -26,7 +28,7 @@ const App = () => {
 
   return (
     <div>
-    <h1 class="header">Get Your News Via Voice</h1>
+    <h1 className="header">Get Your News Via Voice</h1>
       <NewsCards articles={newsArticles} />
     </div>
   );

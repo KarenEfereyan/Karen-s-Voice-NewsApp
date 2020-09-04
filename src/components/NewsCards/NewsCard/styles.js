@@ -1,3 +1,4 @@
+//Styles for newscard component
 import { makeStyles } from '@material-ui/core/styles';
 //All styles here go in as property in camelcase and value in strings
 
