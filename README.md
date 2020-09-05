@@ -10,7 +10,8 @@ Here is an absolute amazing and fully functional voice controlled app.
 * Original YT video learned from : [JSMastery](https://www.youtube.com/watch?v=rqw3OftE5sA)
 
 ### How It Looks 
-
+![](https://github.com/KarenEfereyan/Karen-s-Voice-NewsApp/blob/master/pic1.PNG)
+![](https://github.com/KarenEfereyan/Karen-s-Voice-NewsApp/blob/master/pic2.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
