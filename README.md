@@ -1,3 +1,17 @@
+# Voice Controlled News App
+
+Here is an absolute amazing and fully functional voice controlled app. 
+
+### Resources
+* Github Link : View the [code](https://github.com/KarenEfereyan/Karen-s-Voice-NewsApp)
+* Live Site : See a [demo here](https://karen-s-voice-news-app.vercel.app/)
+* My Backend Code For the App functionality, written in Alan Studio: [Alan Studio](https://studio.alan.app/projects/Karen%20News%20Application/News-App-Script)
+* News API for all the data used : [newsApi](https://newsapi.org/) (Sign up to get your own API key and get started having fun)
+* Original YT video learned from : [JSMastery](https://www.youtube.com/watch?v=rqw3OftE5sA)
+
+### How It Looks 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
