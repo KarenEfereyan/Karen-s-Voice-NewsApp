@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from './components/NewsCards/NewsCards';
-//import Modal from './components/Modal/Modal';
 import wordsToNumbers from 'words-to-numbers';
 import useStyles from './styles.js';
 import { Typography } from '@material-ui/core';
@@ -63,7 +62,6 @@ const App = () => {
         <img src="https://alan.app/voice/images/previews/preview.jpg" className={classes.alanLogo} alt="logo" />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
-      {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen} /> */}
     </div>
   );
 };
