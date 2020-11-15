@@ -8,9 +8,8 @@ import { Typography } from '@material-ui/core';
 
 
 //This allows me interact with my ALAN studio project
-const alanKeyId =
-  'e9da2f327508022e3b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage'
-const newsId='f28a3f24a9aa43c0bd5ef839bce4eb26';
+const alanKeyId =PROCESS.ENV.ALAN_KEY
+const newsId=PROCESS.ENV.NEWS_ID;
 
 
 const App = () => {
@@ -26,7 +25,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key: '64370f4c903e66c5b517887fefa45c1b2e956eca572e1d8b807a3e2338fdd0dc/stage',
+      key: PROCESS.ENV.ALAN_KEY,
       onCommand: ({ command, articles, number }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
