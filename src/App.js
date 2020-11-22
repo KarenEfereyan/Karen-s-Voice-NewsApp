@@ -4,12 +4,13 @@ import NewsCards from './components/NewsCards/NewsCards';
 import wordsToNumbers from 'words-to-numbers';
 import useStyles from './styles.js';
 import { Typography } from '@material-ui/core';
+require('dotenv').config();
+console.log("Process.env object", process.env);
 
-
-
+console.log("Sample ID", process.env.sample_id)
 //This allows me interact with my ALAN studio project
-const alanKeyId =PROCESS.ENV.ALAN_KEY
-const newsId=PROCESS.ENV.NEWS_ID;
+ const alanKeyId = 'e9da2f327508022e3b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage'
+const newsId='f28a3f24a9aa43c0bd5ef839bce4eb26';
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key: PROCESS.ENV.ALAN_KEY,
+       key: 'e9da2f327508022e3b8190d645cafa212e956eca572e1d8b807a3e2338fdd0dc/stage',
       onCommand: ({ command, articles, number }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);

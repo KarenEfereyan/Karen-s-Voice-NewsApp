@@ -1,4 +1,6 @@
 GET http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=f28a3f24a9aa43c0bd5ef839bce4eb26
 
+###
+GET https://api.github.com/graphql
 
 # Click on the send request link to see the repsonse gotten from the API for this particular request. Note that you need to sign up at newsAPI to get your own app key
