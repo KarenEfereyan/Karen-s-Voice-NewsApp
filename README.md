@@ -1,5 +1,5 @@
 # Voice Controlled News App
-
+# WORK IN PROGRESS (WIP)
 Here is an absolute amazing and fully functional voice controlled app. 
 
 ### Resources
